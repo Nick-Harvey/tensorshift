@@ -79,6 +79,7 @@ COPY jupyter_notebook_config.py $HOME/.jupyter/
 
 # Copy sample notebooks.
 COPY notebooks /notebooks
+RUN chmod -R og+rwx /notebooks
 
 # Jupyter has issues with being run directly:
 #   https://github.com/ipython/ipython/issues/7062
