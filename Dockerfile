@@ -86,6 +86,6 @@ RUN chmod -R og+rwx /notebooks
 # We just add a little wrapper script.
 COPY run_jupyter.sh /
 
-WORKDIR /notebooks"
+WORKDIR /notebooks
 
 ENTRYPOINT "/run_jupyter.sh"
