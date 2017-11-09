@@ -18,5 +18,5 @@ echo 'Starting Tensorboard'
 tensorboard --logdir ./ --host 0.0.0.0 --port 6006 &
 
 echo 'Starting Jupyter'
-jupyter notebook "$@" 
+jupyter notebook "$@" --allow-root
 
